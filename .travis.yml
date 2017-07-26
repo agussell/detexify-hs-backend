@@ -1,6 +1,10 @@
+sudo: required
+
 language: haskell
 
-ghc: 8.2
+services:
+  - docker
 
-script:
-  - ./run.sh
+before_install:
+  - docker build -t agussell/detexify-hs-backend .
+  - docker run --rm --name detexify -p 3000:3000 -t agussell/detexify-hs-backend
