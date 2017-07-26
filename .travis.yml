@@ -1,11 +1,6 @@
 language: haskell
 
-cache:
-  directories:
-  - $HOME/.ghc
-  - $HOME/.cabal
-
 ghc: 8.2
 
 script:
-  - cabal install --only-dependencies ./detexify-hs-backend.cabal
+  - ./run.sh
