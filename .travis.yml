@@ -5,4 +5,7 @@ cache:
   - $HOME/.ghc
   - $HOME/.cabal
 
-ghc: 7.8
+ghc: 8.2
+
+script:
+  - cabal install --only-dependancies ./detexify-hs-backend.cabal
