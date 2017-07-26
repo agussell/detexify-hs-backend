@@ -8,4 +8,4 @@ cache:
 ghc: 8.2
 
 script:
-  - cabal install --only-dependancies ./detexify-hs-backend.cabal
+  - cabal install --only-dependencies ./detexify-hs-backend.cabal
